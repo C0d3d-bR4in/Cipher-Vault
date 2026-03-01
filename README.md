@@ -1,73 +1,212 @@
-# Welcome to your Lovable project
+🔐 CipherVault
 
-## Project info
+Client-side file encryption • Zero-knowledge • No server uploads
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+CipherVault is a privacy-focused, browser-based encryption toolkit that allows users to securely encrypt and decrypt files directly in their browser. All cryptographic operations are performed client-side — no files are uploaded to any server.
 
-## How can I edit this code?
+🚀 Features
+🔒 Encrypt
 
-There are several ways of editing your application.
+AES-256-GCM file encryption
 
-**Use Lovable**
+Password-based key derivation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Secure download of encrypted file
 
-Changes made via Lovable will be committed automatically to this repo.
+100% in-browser processing
 
-**Use your preferred IDE**
+🔓 Decrypt
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Unlock .vault files using password
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Integrity verification via GCM authentication
 
-Follow these steps:
+Zero server interaction
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🧪 Advanced Lab
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Steganography module
 
-# Step 3: Install the necessary dependencies.
-npm i
+Challenge mode
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Multi-layer encryption experiments
 
-**Edit a file directly in GitHub**
+📝 Text Vault
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Encrypted notepad
 
-**Use GitHub Codespaces**
+Write → Lock → Download
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Decrypt later with password
 
-## What technologies are used for this project?
+🗂 Dual Vault (CVLT v2)
 
-This project is built with:
+Dual-container encryption
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Plausible deniability architecture
 
-## How can I deploy this project?
+Hidden secure compartment
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Designed for advanced threat scenarios
 
-## Can I connect a custom domain to my Lovable project?
+🛡 Security Model
 
-Yes, you can!
+AES-256-GCM encryption
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+PBKDF2 / Argon2-based key derivation (configurable)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Random salt + IV per encryption
+
+Authenticated encryption (prevents tampering)
+
+Zero-knowledge architecture
+
+No telemetry
+
+No server uploads
+
+No tracking
+
+All cryptographic operations happen inside the browser using Web Crypto API.
+
+🧠 How It Works
+
+Select a file to encrypt or decrypt
+
+Enter your secret password
+
+Process happens entirely in-browser
+
+Download the processed file
+
+🏗 Tech Stack
+
+HTML5
+
+CSS3
+
+Vanilla JavaScript
+
+Web Crypto API
+
+Client-side Blob processing
+
+No backend required
+
+📦 Installation Guide
+
+CipherVault can run as a static website.
+
+Option 1: Clone and Run Locally
+git clone https://github.com/yourusername/ciphervault.git
+cd ciphervault
+
+Then simply open:
+
+index.html
+
+Or use a local server (recommended):
+
+npx serve .
+Option 2: Deploy to Static Hosting
+
+CipherVault works on:
+
+GitHub Pages
+
+Vercel
+
+Netlify
+
+Cloudflare Pages
+
+Any static hosting provider
+
+No server configuration required.
+
+📁 Project Structure
+ciphervault/
+│
+├── index.html
+├── encrypt.html
+├── decrypt.html
+├── advanced-lab/
+├── text-vault/
+├── dual-vault/
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── icons/
+└── README.md
+⚠️ Important Notes
+
+If password is lost, encrypted files cannot be recovered.
+
+Always verify file integrity after decryption.
+
+For maximum security:
+
+Use strong passwords (12+ characters)
+
+Avoid reusing passwords
+
+Store backups securely
+
+🔍 Threat Model Overview
+
+CipherVault protects against:
+
+Cloud storage breaches
+
+Server-side compromise
+
+Passive network surveillance
+
+Unauthorized file inspection
+
+CipherVault does NOT protect against:
+
+Malware on your device
+
+Keyloggers
+
+Weak passwords
+
+Physical device compromise
+
+🧪 Advanced Features Overview
+Steganography
+
+Hide encrypted data inside image files.
+
+Multi-Layer Encryption
+
+Apply multiple encryption layers for high-security scenarios.
+
+Plausible Deniability
+
+Dual Vault allows decoy and hidden vault containers.
+
+🤝 Contributing
+
+Contributions are welcome.
+
+Fork the repository
+
+Create feature branch
+
+Commit changes
+
+Open Pull Request
+
+📜 License
+
+MIT License
+
+👤 Author
+
+Developed by [MD Sakibul Islam Sheikh]
+
+⭐ Support
+
+If you find this project useful, consider starring the repository.
