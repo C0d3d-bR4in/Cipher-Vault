@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 120 100% 94%;
+
+    --card: 0 0% 6%;
+    --card-foreground: 120 100% 94%;
+
+    --popover: 0 0% 6%;
+    --popover-foreground: 120 100% 94%;
+
+    --primary: 120 100% 50%;
+    --primary-foreground: 0 0% 2%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 120 100% 80%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 120 20% 55%;
+
+    --accent: 180 100% 50%;
+    --accent-foreground: 0 0% 2%;
+
+    --destructive: 0 80% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 120 40% 15%;
+    --input: 120 30% 12%;
+    --ring: 120 100% 50%;
+
+    --radius: 0.5rem;
+
+    --vault-glow: 120 100% 50%;
+    --vault-cyan: 180 100% 50%;
+
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 120 100% 94%;
+    --sidebar-primary: 120 100% 50%;
+    --sidebar-primary-foreground: 0 0% 2%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 120 100% 80%;
+    --sidebar-border: 120 40% 15%;
+    --sidebar-ring: 120 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Code', monospace;
+  }
+}
+
+@layer utilities {
+  .font-mono-code {
+    font-family: 'Fira Code', monospace;
+  }
+
+  .glow-green {
+    box-shadow: 0 0 15px hsl(var(--vault-glow) / 0.3),
+                0 0 30px hsl(var(--vault-glow) / 0.1);
+  }
+
+  .glow-green-strong {
+    box-shadow: 0 0 20px hsl(var(--vault-glow) / 0.5),
+                0 0 40px hsl(var(--vault-glow) / 0.2),
+                0 0 60px hsl(var(--vault-glow) / 0.1);
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 15px hsl(var(--vault-cyan) / 0.3),
+                0 0 30px hsl(var(--vault-cyan) / 0.1);
+  }
+
+  .text-glow-green {
+    text-shadow: 0 0 10px hsl(var(--vault-glow) / 0.5),
+                 0 0 20px hsl(var(--vault-glow) / 0.3);
+  }
+
+  .text-glow-cyan {
+    text-shadow: 0 0 10px hsl(var(--vault-cyan) / 0.5),
+                 0 0 20px hsl(var(--vault-cyan) / 0.3);
+  }
+
+  .scanline {
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      hsl(var(--vault-glow) / 0.03) 2px,
+      hsl(var(--vault-glow) / 0.03) 4px
+    );
+  }
+}
